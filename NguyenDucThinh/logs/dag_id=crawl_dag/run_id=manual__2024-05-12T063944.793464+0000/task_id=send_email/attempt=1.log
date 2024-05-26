@@ -1,0 +1,27 @@
+[2024-05-12T06:39:57.165+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crawl_dag.send_email manual__2024-05-12T06:39:44.793464+00:00 [queued]>
+[2024-05-12T06:39:57.176+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crawl_dag.send_email manual__2024-05-12T06:39:44.793464+00:00 [queued]>
+[2024-05-12T06:39:57.177+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-05-12T06:39:57.190+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): send_email> on 2024-05-12 06:39:44.793464+00:00
+[2024-05-12T06:39:57.196+0000] {standard_task_runner.py:57} INFO - Started process 503 to run task
+[2024-05-12T06:39:57.199+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crawl_dag', 'send_email', 'manual__2024-05-12T06:39:44.793464+00:00', '--job-id', '343', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmp7c6gsvf6']
+[2024-05-12T06:39:57.202+0000] {standard_task_runner.py:85} INFO - Job 343: Subtask send_email
+[2024-05-12T06:39:57.247+0000] {task_command.py:416} INFO - Running <TaskInstance: crawl_dag.send_email manual__2024-05-12T06:39:44.793464+00:00 [running]> on host 33d344986a85
+[2024-05-12T06:39:57.323+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='thinhcute' AIRFLOW_CTX_DAG_ID='crawl_dag' AIRFLOW_CTX_TASK_ID='send_email' AIRFLOW_CTX_EXECUTION_DATE='2024-05-12T06:39:44.793464+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-12T06:39:44.793464+00:00'
+[2024-05-12T06:39:58.135+0000] {logging_mixin.py:151} INFO - 202
+[2024-05-12T06:39:58.135+0000] {logging_mixin.py:151} INFO - b''
+[2024-05-12T06:39:58.136+0000] {logging_mixin.py:151} INFO - Server: nginx
+Date: Sun, 12 May 2024 06:39:58 GMT
+Content-Length: 0
+Connection: close
+X-Message-Id: v7iJYWVqQimKsX0ElD2Y3w
+Access-Control-Allow-Origin: https://sendgrid.api-docs.io
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Headers: Authorization, Content-Type, On-behalf-of, x-sg-elas-acl
+Access-Control-Max-Age: 600
+X-No-CORS-Reason: https://sendgrid.com/docs/Classroom/Basics/API/cors.html
+Strict-Transport-Security: max-age=600; includeSubDomains
+[2024-05-12T06:39:58.137+0000] {logging_mixin.py:151} INFO - 2024-05-12 06:39:58.137441
+[2024-05-12T06:39:58.137+0000] {python.py:194} INFO - Done. Returned value was: True
+[2024-05-12T06:39:58.159+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=crawl_dag, task_id=send_email, execution_date=20240512T063944, start_date=20240512T063957, end_date=20240512T063958
+[2024-05-12T06:39:58.217+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-05-12T06:39:58.232+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

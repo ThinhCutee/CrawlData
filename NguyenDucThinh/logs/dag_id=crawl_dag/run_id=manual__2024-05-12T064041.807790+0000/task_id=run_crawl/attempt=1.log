@@ -1,0 +1,250 @@
+[2024-05-12T06:40:42.690+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crawl_dag.run_crawl manual__2024-05-12T06:40:41.807790+00:00 [queued]>
+[2024-05-12T06:40:42.699+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crawl_dag.run_crawl manual__2024-05-12T06:40:41.807790+00:00 [queued]>
+[2024-05-12T06:40:42.700+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-05-12T06:40:42.712+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_crawl> on 2024-05-12 06:40:41.807790+00:00
+[2024-05-12T06:40:42.717+0000] {standard_task_runner.py:57} INFO - Started process 526 to run task
+[2024-05-12T06:40:42.720+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crawl_dag', 'run_crawl', 'manual__2024-05-12T06:40:41.807790+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmp_32j41ku']
+[2024-05-12T06:40:42.723+0000] {standard_task_runner.py:85} INFO - Job 344: Subtask run_crawl
+[2024-05-12T06:40:42.768+0000] {task_command.py:416} INFO - Running <TaskInstance: crawl_dag.run_crawl manual__2024-05-12T06:40:41.807790+00:00 [running]> on host 33d344986a85
+[2024-05-12T06:40:42.846+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='thinhcute' AIRFLOW_CTX_DAG_ID='crawl_dag' AIRFLOW_CTX_TASK_ID='run_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-05-12T06:40:41.807790+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-12T06:40:41.807790+00:00'
+[2024-05-12T06:40:42.848+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-12T06:40:42.849+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\ncd /opt/***/crawldata && python test.py']
+[2024-05-12T06:40:42.859+0000] {subprocess.py:86} INFO - Output:
+[2024-05-12T06:40:47.752+0000] {subprocess.py:93} INFO - NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG TẠI NHÀ (GIA LỘC)
+[2024-05-12T06:40:47.753+0000] {subprocess.py:93} INFO - Số 16-18 Bà Triệu, Phường Phạm Ngũ Lão, TP Hải Dương
+[2024-05-12T06:40:47.754+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-cham-soc-khach-hang-tai-nha-gia-loc-18354
+[2024-05-12T06:40:47.755+0000] {subprocess.py:93} INFO - 8000000 - 12000000 VND
+[2024-05-12T06:40:47.755+0000] {subprocess.py:93} INFO - Thu cước, tư vấn đóng cước dịch vụ Internet & Truyền hình của FPT trong tháng tại nhà khách hàng trên địa bàn được phân công.
+[2024-05-12T06:40:47.756+0000] {subprocess.py:93} INFO - Hỗ trợ khách hàng báo sự cố đến cán bộ quản lý, tương tác với các bộ phận liên quan để giải quyết và chăm sóc khách hàng khi có khiếu nại hoặc vấn đề phát sinh.
+[2024-05-12T06:40:47.756+0000] {subprocess.py:93} INFO - Thu hồi các thiết bị khi khách hàng không còn nhu cầu sử dụng dịch vụ.
+[2024-05-12T06:40:47.757+0000] {subprocess.py:93} INFO - Làm việc theo danh sách khách hàng được giao.
+[2024-05-12T06:40:47.757+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo yêu cầu từ Trưởng Bộ phận/ Đơn vị.
+[2024-05-12T06:40:47.758+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.758+0000] {subprocess.py:93} INFO - NHÂN VIÊN KINH DOANH DỊCH VỤ VIỄN THÔNG (QUẬN 5, QUẬN 6, QUẬN 10, QUẬN 11 - HCM)
+[2024-05-12T06:40:47.759+0000] {subprocess.py:93} INFO - 227 Hậu Giang, Phường 5, Quận 6, Thành Phố Hồ Chí Minh
+[2024-05-12T06:40:47.760+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-kinh-doanh-dich-vu-vien-thong-quan-5-quan-6-quan-10-quan-11-hcm-18352
+[2024-05-12T06:40:47.761+0000] {subprocess.py:93} INFO - 8000000 - 20000000 VND
+[2024-05-12T06:40:47.763+0000] {subprocess.py:93} INFO - Tìm kiếm thông tin, tiếp cận các khách hàng tiềm năng.
+[2024-05-12T06:40:47.765+0000] {subprocess.py:93} INFO - Tư vấn, giải thích cho khách hàng về dịch vụ internet, truyền hình, camera do FPT Telecom đang cung cấp. Tạo ra những tương tác, trải nghiệm cá nhân hóa tới khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:47.766+0000] {subprocess.py:93} INFO - Đàm phán thương lượng, thực hiện các thủ tục ký kết hợp đồng với khách hàng.
+[2024-05-12T06:40:47.768+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.769+0000] {subprocess.py:93} INFO - NHÂN VIÊN KỸ THUẬT TRIỂN KHAI VÀ BẢO TRÌ MẠNG VIỄN THÔNG  (QUẬN 5, 6, 10, 11)
+[2024-05-12T06:40:47.769+0000] {subprocess.py:93} INFO - 227 Hậu Giang, Phường 5, Quận 6, Thành Phố Hồ Chí Minh
+[2024-05-12T06:40:47.769+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-ky-thuat-trien-khai-va-bao-tri-mang-vien-thong-quan-5-6-10-11-18350
+[2024-05-12T06:40:47.770+0000] {subprocess.py:93} INFO - 8000000 - 15000000 VND
+[2024-05-12T06:40:47.770+0000] {subprocess.py:93} INFO - Khảo sát, lắp đặt đường truyền Internet, Camera đến nhà khách hàng.
+[2024-05-12T06:40:47.771+0000] {subprocess.py:93} INFO - Kiểm tra, sửa chữa hệ thống viễn thông.
+[2024-05-12T06:40:47.771+0000] {subprocess.py:93} INFO - Hỗ trợ tư vấn kỹ thuật trực tiếp cho khách hàng.
+[2024-05-12T06:40:47.771+0000] {subprocess.py:93} INFO - Kết hợp tư vấn, bán các sản phẩm dịch vụ công ty cung cấp. Thấu cảm, tạo ra những
+[2024-05-12T06:40:47.771+0000] {subprocess.py:93} INFO - tương tác, trải nghiệm cá nhân hóa tới khách hàng trên các kênh ở mọi điểm chạm.
+[2024-05-12T06:40:47.772+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo sự phân công của trưởng bộ phận.
+[2024-05-12T06:40:47.772+0000] {subprocess.py:93} INFO - Khu vực tuyển dụng: Quận 5, 6, 10, 11
+[2024-05-12T06:40:47.773+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.773+0000] {subprocess.py:93} INFO - CHUYÊN VIÊN KINH DOANH DỊCH VỤ VIỄN THÔNG (QUẬN 5, 6, 10, 11)
+[2024-05-12T06:40:47.773+0000] {subprocess.py:93} INFO - 227 Hậu Giang, Phường 5, Quận 6, Thành Phố Hồ Chí Minh
+[2024-05-12T06:40:47.774+0000] {subprocess.py:93} INFO - https://fptjobs.com/chuyen-vien-kinh-doanh-dich-vu-vien-thong-quan-5-6-10-11-18349
+[2024-05-12T06:40:47.774+0000] {subprocess.py:93} INFO - 10000000 - 20000000 VND
+[2024-05-12T06:40:47.775+0000] {subprocess.py:93} INFO - Tư vấn, giải thích cho khách hàng về dịch vụ do FPT Telecom đang cung cấp.
+[2024-05-12T06:40:47.775+0000] {subprocess.py:93} INFO - Sản phẩm: Internet, Truyền hình và Camera FPT
+[2024-05-12T06:40:47.775+0000] {subprocess.py:93} INFO - Đàm phán, thương lượng, xúc tiến ký kết hợp đồng với khách hàng.
+[2024-05-12T06:40:47.776+0000] {subprocess.py:93} INFO - Làm việc tại văn phòng hoặc theo yêu cầu, hướng dẫn của quản lý trực tiếp.
+[2024-05-12T06:40:47.776+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.777+0000] {subprocess.py:93} INFO - NHÂN VIÊN KINH DOANH DỊCH VỤ VIỄN THÔNG (QUẬN 5, QUẬN 6, QUẬN 10, QUẬN 11 - HCM)
+[2024-05-12T06:40:47.778+0000] {subprocess.py:93} INFO - 227 Hậu Giang, Phường 5, Quận 6, Thành Phố Hồ Chí Minh
+[2024-05-12T06:40:47.778+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-kinh-doanh-dich-vu-vien-thong-quan-5-quan-6-quan-10-quan-11-hcm-18345
+[2024-05-12T06:40:47.779+0000] {subprocess.py:93} INFO - 8000000 - 20000000 VND
+[2024-05-12T06:40:47.779+0000] {subprocess.py:93} INFO - Tìm kiếm thông tin, tiếp cận các khách hàng tiềm năng.
+[2024-05-12T06:40:47.779+0000] {subprocess.py:93} INFO - Tư vấn, giải thích cho khách hàng về dịch vụ internet, truyền hình, camera do FPT Telecom đang cung cấp. Tạo ra những tương tác, trải nghiệm cá nhân hóa tới khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:47.780+0000] {subprocess.py:93} INFO - Đàm phán thương lượng, thực hiện các thủ tục ký kết hợp đồng với khách hàng.
+[2024-05-12T06:40:47.780+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.781+0000] {subprocess.py:93} INFO - DATA SCIENTIST
+[2024-05-12T06:40:47.781+0000] {subprocess.py:93} INFO - Tầng 19, FPT Tower, Số 10 Phạm Văn Bạch, Yên Hoà, Cầu Giấy, Hà Nội.
+[2024-05-12T06:40:47.782+0000] {subprocess.py:93} INFO - https://fptjobs.com/data-scientist-18337
+[2024-05-12T06:40:47.782+0000] {subprocess.py:93} INFO - lương thỏa thuận
+[2024-05-12T06:40:47.783+0000] {subprocess.py:93} INFO - Làm việc với các lập trình viên, kỹ sư và người quản lý để xác định các cơ hội cải tiến quy trình, đề xuất sửa đổi hệ thống và đưa ra các chiến lược quản trị dữ liệu.
+[2024-05-12T06:40:47.783+0000] {subprocess.py:93} INFO - Phối hợp với các phòng ban liên quan trong kinh doanh, vận hành để hiểu các nghiệp vụ, xác định phương pháp phân tích tối ưu.
+[2024-05-12T06:40:47.784+0000] {subprocess.py:93} INFO - Khai thác và phân tích các nguồn dữ liệu quy mô để khám phá những hiểu biết sâu sắc, các vấn đề và cơ hội cũng như đề xuất các giải pháp.
+[2024-05-12T06:40:47.784+0000] {subprocess.py:93} INFO - Đảm nhận việc thu thập, tiền xử lý và phân tích dữ liệu.
+[2024-05-12T06:40:47.785+0000] {subprocess.py:93} INFO - Xây dựng, xác thực và triển khai các mô hình học máy, học sâu để giải quyết các vấn đề nghiệp vụ kinh doanh, vận hành quan trọng.
+[2024-05-12T06:40:47.785+0000] {subprocess.py:93} INFO - Phát triển các quy trình và công cụ để theo dõi và phân tích hiệu suất của mô hình và độ chính xác của dữ liệu.
+[2024-05-12T06:40:47.786+0000] {subprocess.py:93} INFO - Đề xuất ý tưởng tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các kênh (online/offline) ở mọi điểm chạm.
+[2024-05-12T06:40:47.786+0000] {subprocess.py:93} INFO - Chia sẻ, đào tạo cho các thành viên của nhóm.
+[2024-05-12T06:40:47.787+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.787+0000] {subprocess.py:93} INFO - CHUYÊN GIA BẢO MẬT
+[2024-05-12T06:40:47.787+0000] {subprocess.py:93} INFO - Tầng 19, tòa nhà FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội
+[2024-05-12T06:40:47.788+0000] {subprocess.py:93} INFO - https://fptjobs.com/chuyen-gia-bao-mat-18333
+[2024-05-12T06:40:47.788+0000] {subprocess.py:93} INFO - lương thỏa thuận
+[2024-05-12T06:40:47.789+0000] {subprocess.py:93} INFO - Thực hiện hoạt động điều tra số, truy vết nhằm xác định nguyên nhân và nguồn gốc các hành vi xâm nhập trái phép hệ thống CNTT theo phân công.​​​​​
+[2024-05-12T06:40:47.789+0000] {subprocess.py:93} INFO - Tham gia phối hợp cùng các đơn vị liên quan xử lý các sự cố ANTT.
+[2024-05-12T06:40:47.790+0000] {subprocess.py:93} INFO - Chủ động tìm kiếm, phát hiện các rủi ro có thể gây mất an toàn an ninh thông tin trong hệ thống.
+[2024-05-12T06:40:47.790+0000] {subprocess.py:93} INFO - Thực hiện giám sát/cảnh báo/phân tích các sự kiện, sự cố ANTT trên hệ thống.
+[2024-05-12T06:40:47.791+0000] {subprocess.py:93} INFO - Cập nhật các dấu hiệu tấn công, các dấu hiệu nhận biết để thực hiện giám sát thời gian thực trên toàn hệ thống.
+[2024-05-12T06:40:47.791+0000] {subprocess.py:93} INFO - Xây dựng quy trình xử lý sự cố, xử lý cảnh báo, xử lý nguy cơ, và xử lý vấn đề ATTT.
+[2024-05-12T06:40:47.792+0000] {subprocess.py:93} INFO - Nghiên cứu các kỹ thuật tấn công mới, từ đó đưa ra các phương thức để thực hiện giám sát tấn công trên hệ thống
+[2024-05-12T06:40:47.792+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.792+0000] {subprocess.py:93} INFO - NHÂN VIÊN THU CƯỚC DỊCH VỤ VIỄN THÔNG (PHÙ CÁT, PHÙ MỸ)
+[2024-05-12T06:40:47.793+0000] {subprocess.py:93} INFO - 302 Ngô Gia Tự, P. Bình Định, TX. An Nhơn, Bình Định
+[2024-05-12T06:40:47.793+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-thu-cuoc-dich-vu-vien-thong-phu-cat-phu-my-18327
+[2024-05-12T06:40:47.794+0000] {subprocess.py:93} INFO - 7000000 - 15000000 VND
+[2024-05-12T06:40:47.794+0000] {subprocess.py:93} INFO - Thu cước sử dụng dịch vụ Internet phát sinh trong tháng tại nhà khách hàng.
+[2024-05-12T06:40:47.794+0000] {subprocess.py:93} INFO - Xác minh thực trạng, địa chỉ khách hàng.
+[2024-05-12T06:40:47.794+0000] {subprocess.py:93} INFO - Chăm sóc và hỗ trợ khách hàng tại nhà khách hàng
+[2024-05-12T06:40:47.795+0000] {subprocess.py:93} INFO - Công ty sẽ sắp xếp để nhân viên đi thu cước ở khu vực gần nơi cư trú
+[2024-05-12T06:40:47.795+0000] {subprocess.py:93} INFO - Ưu tiên những ứng viên có hộ khẩu tại H. Phù Cát, H. Phù Mỹ
+[2024-05-12T06:40:47.795+0000] {subprocess.py:93} INFO - Nơi làm việc: H. Phù Cát, H. Phù Mỹ
+[2024-05-12T06:40:47.795+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.795+0000] {subprocess.py:93} INFO - KỸ THUẬT VIÊN KHẢO SÁT THIẾT KẾ HẠ TẦNG VIỄN THÔNG (HCM)
+[2024-05-12T06:40:47.796+0000] {subprocess.py:93} INFO - 29B-31B-33B, Đường Tân Thuận, Khu chế xuất Tân Thuận, Phường Tân Thuận Đông, Quận 7, Thành phố Hồ Chí Minh
+[2024-05-12T06:40:47.796+0000] {subprocess.py:93} INFO - https://fptjobs.com/ky-thuat-vien-khao-sat-thiet-ke-ha-tang-vien-thong-hcm-18326
+[2024-05-12T06:40:47.796+0000] {subprocess.py:93} INFO - 15000000 - 18000000 VND
+[2024-05-12T06:40:47.796+0000] {subprocess.py:93} INFO - Tư vấn, lập hồ sơ thiết kế các công trình hạ tầng kỹ thuật phục vụ viễn thông, truyền hình, .…
+[2024-05-12T06:40:47.797+0000] {subprocess.py:93} INFO - Khảo sát, thực hiện các giải pháp thiết kế hệ thống đài,trạm để lắp đặt thiết bị phục vụ Viễn thông, DataCenter, ....
+[2024-05-12T06:40:47.797+0000] {subprocess.py:93} INFO - Khảo sát, lập hồ sơ thiết kế mạng cáp quang phục vụ internet, truyền hình, ....
+[2024-05-12T06:40:47.798+0000] {subprocess.py:93} INFO - Nghiên cứu giải pháp, lập các hồ sơ thiết kế hạ tầng kỹ thuật cung cấp dịch vụ viễn thông, thông tin liên lạc, smart city...cho các khu dân cư, các DA nhà ở, ....
+[2024-05-12T06:40:47.798+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:47.799+0000] {subprocess.py:93} INFO - ANDROID DEVELOPER
+[2024-05-12T06:40:50.749+0000] {subprocess.py:93} INFO - Số 336-340 Huỳnh Tấn Phát, Phường Tân Thuận Tây, Quận 7, TP. HCM
+[2024-05-12T06:40:50.749+0000] {subprocess.py:93} INFO - https://fptjobs.com/android-developer-18325
+[2024-05-12T06:40:50.750+0000] {subprocess.py:93} INFO - 15000000 - 30000000 VND
+[2024-05-12T06:40:50.751+0000] {subprocess.py:93} INFO - Thiết kế và phát triển các ứng dụng Android thuộc dự án Camera & các dự án IoT (FPT Telecom) trên nền tảng Java/Kotlin/Jetpack.
+[2024-05-12T06:40:50.751+0000] {subprocess.py:93} INFO - Nghiên cứu tìm hiểu công nghệ mới áp dụng cho dự án, thiết kế xây dựng và phát triển ý tưởng mới cho ứng dụng.
+[2024-05-12T06:40:50.752+0000] {subprocess.py:93} INFO - Lập trình các module tính năng theo bản phân tích thiết kế.
+[2024-05-12T06:40:50.752+0000] {subprocess.py:93} INFO - Tham gia toàn bộ quy trình về phát triển sản phẩm.
+[2024-05-12T06:40:50.753+0000] {subprocess.py:93} INFO - Quản lý vòng đời kỹ thuật đầy đủ của các ứng dụng Android trong mỗi lần phát triển.
+[2024-05-12T06:40:50.753+0000] {subprocess.py:93} INFO - Tuân thủ theo các tiêu chuẩn thiết kế, tiêu chuẩn mã nguồn, bảo mật.
+[2024-05-12T06:40:50.754+0000] {subprocess.py:93} INFO - Chẩn đoán các vấn đề về hiệu suất, sửa lỗi để tăng chức năng của các ứng dụng mới.
+[2024-05-12T06:40:50.754+0000] {subprocess.py:93} INFO - Phối hợp với các team UI/UX, BA, BackEnd, QC,... triển khai đảm bảo các yêu cầu về chất lượng, tiến độ.
+[2024-05-12T06:40:50.755+0000] {subprocess.py:93} INFO - Thực hiện Unit Test.
+[2024-05-12T06:40:50.755+0000] {subprocess.py:93} INFO - Làm việc, phối hợp, báo cáo công việc theo sự phân công công việc của cấp trên.
+[2024-05-12T06:40:50.755+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.756+0000] {subprocess.py:93} INFO - NHÂN VIÊN DỊCH VỤ KHÁCH HÀNG (TẠI NHA TRANG KHÁNH HÒA)
+[2024-05-12T06:40:50.756+0000] {subprocess.py:93} INFO - Tầng 1,2 Tòa Nhà 42 Lê Thành Phương, Phương Sài,  Nha Trang, Khánh Hòa
+[2024-05-12T06:40:50.757+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-dich-vu-khach-hang-tai-nha-trang-khanh-hoa-18324
+[2024-05-12T06:40:50.757+0000] {subprocess.py:93} INFO - 8000000 - 15000000 VND
+[2024-05-12T06:40:50.757+0000] {subprocess.py:93} INFO - Quản lý hợp đồng dịch vụ khách hàng: Kiểm tra hợp đồng, giấy tờ và cập nhật đầy đủ, chính xác thông tin của khách hàng trên hệ thống.
+[2024-05-12T06:40:50.758+0000] {subprocess.py:93} INFO - Thực hiện các thủ tục chuyển đổi, đổi chủ, thanh lý hợp đồng theo yêu cầu của khách hàng.
+[2024-05-12T06:40:50.758+0000] {subprocess.py:93} INFO - Thu phí của khách hàng đến thanh toán tại quầy giao dịch và từ các nhân viên thu cước làm việc tại chi nhánh.
+[2024-05-12T06:40:50.758+0000] {subprocess.py:93} INFO - Quản lý và hỗ trợ đội ngũ nhân viên thu cước đảm bảo hoàn thành chỉ tiêu thanh toán theo yêu cầu của bộ phận.
+[2024-05-12T06:40:50.759+0000] {subprocess.py:93} INFO - Cập nhật trên hệ thống quản lý các khoản thu trong ngày và nộp tiền bảo đảm đầy đủ, chính xác.
+[2024-05-12T06:40:50.759+0000] {subprocess.py:93} INFO - Chăm sóc khách hàng sử dụng dịch vụ của Công ty.
+[2024-05-12T06:40:50.760+0000] {subprocess.py:93} INFO - Khu vực làm việc: TP. Nha Trang.
+[2024-05-12T06:40:50.760+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.761+0000] {subprocess.py:93} INFO - NHÂN VIÊN KỸ THUẬT TRIỂN KHAI VÀ BẢO TRÌ MẠNG VIỄN THÔNG  (TẠI ĐÔNG ANH, MÊ LINH, SÓC SƠN)
+[2024-05-12T06:40:50.761+0000] {subprocess.py:93} INFO - 220 Cao Lỗ, Xã Uy Nỗ, Huyện Đông Anh, TP Hà Nội
+[2024-05-12T06:40:50.762+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-ky-thuat-trien-khai-va-bao-tri-mang-vien-thong-tai-dong-anh-me-linh-soc-son-18321
+[2024-05-12T06:40:50.762+0000] {subprocess.py:93} INFO - 7000000 - 20000000 VND
+[2024-05-12T06:40:50.763+0000] {subprocess.py:93} INFO - Triển khai lắp đặt thuê bao Pay TV, FTTH cho khách hàng của công ty.
+[2024-05-12T06:40:50.763+0000] {subprocess.py:93} INFO - Tiến hành kiểm tra, sửa chữa tín hiệu đường dây FTTH cho khách hàng.
+[2024-05-12T06:40:50.764+0000] {subprocess.py:93} INFO - Cài đặt các dịch vụ khác ( One TV, truyền hình cáp,...) do FPT cung cấp cho khánh hàng.
+[2024-05-12T06:40:50.764+0000] {subprocess.py:93} INFO - Hỗ trợ kĩ thuật trực tiếp cho khách hàng.
+[2024-05-12T06:40:50.765+0000] {subprocess.py:93} INFO - Địa điểm làm việc : Đông Anh, Mê Linh, Sóc Sơn, Hà Nội.
+[2024-05-12T06:40:50.765+0000] {subprocess.py:93} INFO - Tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:50.766+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.766+0000] {subprocess.py:93} INFO - NHÂN VIÊN KINH DOANH DỊCH VỤ VIỄN THÔNG (ĐÔNG ANH, MÊ LINH, SÓC SƠN)
+[2024-05-12T06:40:50.767+0000] {subprocess.py:93} INFO - 220 Cao Lỗ, Xã Uy Nỗ, Huyện Đông Anh, TP Hà Nội
+[2024-05-12T06:40:50.767+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-kinh-doanh-dich-vu-vien-thong-dong-anh-me-linh-soc-son-18320
+[2024-05-12T06:40:50.768+0000] {subprocess.py:93} INFO - 8000000 - 30000000 VND
+[2024-05-12T06:40:50.768+0000] {subprocess.py:93} INFO - Tìm kiếm thông tin, tiếp cận các khách hàng tiềm năng.
+[2024-05-12T06:40:50.768+0000] {subprocess.py:93} INFO - Tư vấn, giải thích cho khách hàng về dịch vụ Internet và các dịch vụ giá trị gia tăng trên đường truyền internet do FPT Telecom đang cung cấp.
+[2024-05-12T06:40:50.768+0000] {subprocess.py:93} INFO - Đàm phán thương lượng, thực hiện các thủ tục ký kết hợp đồng với khách hàng.
+[2024-05-12T06:40:50.769+0000] {subprocess.py:93} INFO - Thực hiện công tác chăm sóc khách hàng trước và sau khi bán.
+[2024-05-12T06:40:50.769+0000] {subprocess.py:93} INFO - Địa điểm làm việc:
+[2024-05-12T06:40:50.769+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:50.770+0000] {subprocess.py:93} INFO - 220 Cao Lỗ, Xã Uy Nỗ, Huyện Đông Anh, TP Hà Nội;
+[2024-05-12T06:40:50.770+0000] {subprocess.py:93} INFO - Khu đô thị Phương Huy, Phố Yên, Mê Linh, Hà Nội;
+[2024-05-12T06:40:50.770+0000] {subprocess.py:93} INFO - 18 Miếu Thờ, Tiên Dược, Sóc Sơn, Hà Nội.
+[2024-05-12T06:40:50.771+0000] {subprocess.py:93} INFO - Tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:50.771+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:50.771+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:50.771+0000] {subprocess.py:93} INFO - Tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:50.772+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.772+0000] {subprocess.py:93} INFO - NHÂN VIÊN KỸ THUẬT TRIỂN KHAI VÀ BẢO TRÌ MẠNG VIỄN THÔNG  (ĐÀ NẴNG)
+[2024-05-12T06:40:50.772+0000] {subprocess.py:93} INFO - 909 Ngô Quyền, P, An Hải Đông, Quận Sơn Trà, TP. Đà Nẵng
+[2024-05-12T06:40:50.772+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-ky-thuat-trien-khai-va-bao-tri-mang-vien-thong-da-nang-18319
+[2024-05-12T06:40:50.773+0000] {subprocess.py:93} INFO - 8000000 - 15000000 VND
+[2024-05-12T06:40:50.773+0000] {subprocess.py:93} INFO - Triển khai và bảo trì đường truyền Internet cho khách hàng.
+[2024-05-12T06:40:50.773+0000] {subprocess.py:93} INFO -  Kiểm tra, sửa chữa tín hiệu đường dây (Bao gồm các sự cố liên quan đến tuyến cáp thuê bao và thiết bị sử dụng internet trong nhà khách hàng).
+[2024-05-12T06:40:50.773+0000] {subprocess.py:93} INFO - Lắp đặt các dịch vụ khác (Truyền hình FPT, thiết bị wifi, camera ...) do FPT Telecom cung cấp.
+[2024-05-12T06:40:50.774+0000] {subprocess.py:93} INFO - Hỗ trợ kỹ thuật trực tiếp cho khách hàng.
+[2024-05-12T06:40:50.774+0000] {subprocess.py:93} INFO - Kết hợp tư vấn, bán các sản phẩm dịch vụ công ty cung cấp. Thấu cảm, tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các kênh (online/offline) ở mọi điểm chạm.
+[2024-05-12T06:40:50.774+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo yêu cầu của trưởng bộ phận.
+[2024-05-12T06:40:50.774+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.775+0000] {subprocess.py:93} INFO - KỸ THUẬT VIÊN (HỒ CHÍ MINH)
+[2024-05-12T06:40:50.775+0000] {subprocess.py:93} INFO - Làm các quận thuộc khu vực HCM (hỗ trợ làm gần nơi sinh sống)
+[2024-05-12T06:40:50.775+0000] {subprocess.py:93} INFO - https://fptjobs.com/ky-thuat-vien-ho-chi-minh-18318
+[2024-05-12T06:40:50.776+0000] {subprocess.py:93} INFO - 8000000 - 15000000 VND
+[2024-05-12T06:40:50.776+0000] {subprocess.py:93} INFO - Triển khai và bảo trì đường truyền Internet, Camera đến nhà khách hàng.
+[2024-05-12T06:40:50.776+0000] {subprocess.py:93} INFO - Hỗ trợ kỹ thuật tại nhà khách hàng khi có sự cố về Internet, Truyền hình FPT Play hoặc bảo trì dịch vụ theo yêu cầu của khách hàng về các sự cố khác.
+[2024-05-12T06:40:50.776+0000] {subprocess.py:93} INFO - Kiểm tra, sửa chữa hệ thống viễn thông và thu hồi các thiết bị khi khách hàng không còn nhu cầu sử dụng dịch vụ.
+[2024-05-12T06:40:50.777+0000] {subprocess.py:93} INFO - Thu cước và tư vấn đóng cước dịch vụ Internet, truyền hình FPT Play trên địa bàn được phân công.
+[2024-05-12T06:40:50.777+0000] {subprocess.py:93} INFO - Thấu cảm, tạo ra những tương tác, trải nghiệm cá nhân hóa tới khách hàng trên các kênh ở mọi điểm chạm.
+[2024-05-12T06:40:50.777+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo sự phân công của trưởng bộ phận.
+[2024-05-12T06:40:50.777+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.778+0000] {subprocess.py:93} INFO - THỰC TẬP SINH NHÂN SỰ
+[2024-05-12T06:40:50.778+0000] {subprocess.py:93} INFO - 68/11A Phạm Thái Bường, Phường 4, Tp. Vĩnh Long, Vĩnh Long
+[2024-05-12T06:40:50.779+0000] {subprocess.py:93} INFO - https://fptjobs.com/thuc-tap-sinh-nhan-su-18315
+[2024-05-12T06:40:50.779+0000] {subprocess.py:93} INFO - lương thỏa thuận
+[2024-05-12T06:40:50.780+0000] {subprocess.py:93} INFO - Đăng tin tuyển dụng khi có yêu cầu từ phòng ban
+[2024-05-12T06:40:50.780+0000] {subprocess.py:93} INFO - Quản lý tin tuyển dụng và hồ sơ ứng tuyển
+[2024-05-12T06:40:50.781+0000] {subprocess.py:93} INFO - Hỗ trợ công tác hành chính
+[2024-05-12T06:40:50.781+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo yêu cầu của phòng
+[2024-05-12T06:40:50.781+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.782+0000] {subprocess.py:93} INFO - THỰC TẬP SINH TUYỂN DỤNG (KHỐI TECH & BO_QUẬN 7_KHÔNG LƯƠNG)
+[2024-05-12T06:40:50.782+0000] {subprocess.py:93} INFO - Lô L29B-31B-33B, Đường Tân Thuận, KCX Tân Thuận, Quận 7, Tp.HCM
+[2024-05-12T06:40:50.782+0000] {subprocess.py:93} INFO - https://fptjobs.com/thuc-tap-sinh-tuyen-dung-khoi-tech--boquan-7khong-luong-18314
+[2024-05-12T06:40:50.783+0000] {subprocess.py:93} INFO - lương thỏa thuận
+[2024-05-12T06:40:50.783+0000] {subprocess.py:93} INFO - Tìm kiếm, sàng lọc hồ sơ ứng viên (chủ yếu tuyển dụng các vị trí khối Tech & BO).
+[2024-05-12T06:40:50.783+0000] {subprocess.py:93} INFO - Đăng tuyển dụng & Research hồ sơ trên các kênh phù hợp.
+[2024-05-12T06:40:50.783+0000] {subprocess.py:93} INFO - Sàn lọc Hồ sơ ứng tuyển phù hợp.
+[2024-05-12T06:40:50.784+0000] {subprocess.py:93} INFO - Sắp xếp lịch phỏng vấn với ứng viên và bộ phận.
+[2024-05-12T06:40:50.784+0000] {subprocess.py:93} INFO - Hỗ trợ công tác phỏng vấn với đơn vị.
+[2024-05-12T06:40:50.784+0000] {subprocess.py:93} INFO - Quản lý hồ sơ ứng viên ứng tuyển, nhận việc ứng viên.
+[2024-05-12T06:40:50.785+0000] {subprocess.py:93} INFO - Tham gia tổ chức các chương trình, sự kiện tuyển dụng.
+[2024-05-12T06:40:50.785+0000] {subprocess.py:93} INFO - Tham gia các dự án Nhân sự cùng bộ phận.
+[2024-05-12T06:40:50.785+0000] {subprocess.py:93} INFO - Thực hiện các công việc khác theo yêu cầu của CBQL.
+[2024-05-12T06:40:50.786+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:50.786+0000] {subprocess.py:93} INFO - CHUYÊN VIÊN KINH DOANH
+[2024-05-12T06:40:51.499+0000] {subprocess.py:93} INFO - 2024-05-12 06:40:51 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrapybot)
+[2024-05-12T06:40:51.501+0000] {subprocess.py:93} INFO - 2024-05-12 06:40:51 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.8.18 (default, Oct 11 2023, 23:57:43) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.2.5
+[2024-05-12T06:40:51.502+0000] {subprocess.py:93} INFO - Tầng 5, tòa Detech Tower 2, số 107 Nguyễn Phong Sắc, Hà Nội
+[2024-05-12T06:40:51.503+0000] {subprocess.py:93} INFO - https://fptjobs.com/chuyen-vien-kinh-doanh-18313
+[2024-05-12T06:40:51.504+0000] {subprocess.py:93} INFO - lương thỏa thuận
+[2024-05-12T06:40:51.504+0000] {subprocess.py:93} INFO - Quản lý, phát triển kinh doanh FPT Smart Home, phụ trách bán hàng & tư vấn các sản phẩm Smart Home.
+[2024-05-12T06:40:51.504+0000] {subprocess.py:93} INFO - Phối hợp cùng các đơn vị phát triển dự án để cùng vào dự án Smart Home.
+[2024-05-12T06:40:51.505+0000] {subprocess.py:93} INFO - Quản lý mối quan hệ giữa các đối tác và tất cả các bên liên quan.
+[2024-05-12T06:40:51.505+0000] {subprocess.py:93} INFO - Là người liên hệ chính với tất cả thông tin vào và ra trong quá trình tiến triển dự án.
+[2024-05-12T06:40:51.505+0000] {subprocess.py:93} INFO - Tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các điểm tiếp xúc, các kênh tiếp xúc online/offline.
+[2024-05-12T06:40:51.506+0000] {subprocess.py:93} INFO - Xây dựng kênh bán affiliate, Sàn BĐS, Chủ thầu Xây dựng và dự án.
+[2024-05-12T06:40:51.506+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:51.506+0000] {subprocess.py:93} INFO - KỸ THUẬT VIÊN BẢO TRÌ HẠ TẦNG VIỄN THÔNG
+[2024-05-12T06:40:51.507+0000] {subprocess.py:93} INFO - 285K, Khu Phố 3, Phường Phú Tân, Thành phố Bến Tre, Bến Tre
+[2024-05-12T06:40:51.507+0000] {subprocess.py:93} INFO - https://fptjobs.com/ky-thuat-vien-bao-tri-ha-tang-vien-thong-18312
+[2024-05-12T06:40:51.507+0000] {subprocess.py:93} INFO - 8000000 - 15000000 VND
+[2024-05-12T06:40:51.508+0000] {subprocess.py:93} INFO - Xử lý các sự cố ngoại vi cáp đồng, cáp quang.
+[2024-05-12T06:40:51.508+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.508+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.508+0000] {subprocess.py:93} INFO - Xử lý di dời cáp do điện lực nhổ trụ, thu hồi trụ, thay trụ mới.
+[2024-05-12T06:40:51.509+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.509+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.509+0000] {subprocess.py:93} INFO - Phối hợp giám sát công tác chỉnh trang.
+[2024-05-12T06:40:51.509+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.510+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.510+0000] {subprocess.py:93} INFO - Thấu cảm, tạo ra những tương tác, trải nghiệm cá nhân hóa tới người dùng/khách hàng trên các kênh (online/offline) ở mọi điểm chạm.
+[2024-05-12T06:40:51.511+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.511+0000] {subprocess.py:93} INFO - 
+[2024-05-12T06:40:51.512+0000] {subprocess.py:93} INFO - Làm việc tại một trong các chi nhánh FPT Telecom (ưu tiên khu vực gần nơi ở).
+[2024-05-12T06:40:51.512+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:51.513+0000] {subprocess.py:93} INFO - NHÂN VIÊN KINH DOANH (QUẬN 5,6,10)
+[2024-05-12T06:40:51.513+0000] {subprocess.py:93} INFO - 227 Hậu Giang, Phường 5, Quận 6, TP.HCM
+[2024-05-12T06:40:51.514+0000] {subprocess.py:93} INFO - https://fptjobs.com/nhan-vien-kinh-doanh-quan-5610-18311
+[2024-05-12T06:40:51.514+0000] {subprocess.py:93} INFO - 10000000 - 20000000 VND
+[2024-05-12T06:40:51.514+0000] {subprocess.py:93} INFO - Tư vấn, giải thích cho khách hàng về dịch vụ do FPT Telecom đang cung cấp.
+[2024-05-12T06:40:51.515+0000] {subprocess.py:93} INFO - Sản phẩm: Internet, Truyền hình và Camera FPT
+[2024-05-12T06:40:51.515+0000] {subprocess.py:93} INFO - Kênh bán hàng: phát triển thị trường, online, đối tác, B2C, B2B... (sẽ được Trưởng phòng kinh doanh đào tạo bài bản)
+[2024-05-12T06:40:51.516+0000] {subprocess.py:93} INFO - Đàm phán, thương lượng, xúc tiến ký kết hợp đồng với khách hàng.
+[2024-05-12T06:40:51.516+0000] {subprocess.py:93} INFO - Làm việc tại văn phòng hoặc theo yêu cầu, hướng dẫn của quản lý trực tiếp.
+[2024-05-12T06:40:51.516+0000] {subprocess.py:93} INFO - ---------------------------------
+[2024-05-12T06:40:51.636+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-12T06:40:51.658+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=crawl_dag, task_id=run_crawl, execution_date=20240512T064041, start_date=20240512T064042, end_date=20240512T064051
+[2024-05-12T06:40:51.694+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-05-12T06:40:51.721+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

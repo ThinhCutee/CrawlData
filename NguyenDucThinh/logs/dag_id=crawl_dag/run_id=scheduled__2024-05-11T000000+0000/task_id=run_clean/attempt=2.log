@@ -1,0 +1,28 @@
+[2024-05-12T06:08:47.217+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crawl_dag.run_clean scheduled__2024-05-11T00:00:00+00:00 [queued]>
+[2024-05-12T06:08:47.226+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crawl_dag.run_clean scheduled__2024-05-11T00:00:00+00:00 [queued]>
+[2024-05-12T06:08:47.227+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2024-05-12T06:08:47.238+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_clean> on 2024-05-11 00:00:00+00:00
+[2024-05-12T06:08:47.242+0000] {standard_task_runner.py:57} INFO - Started process 348 to run task
+[2024-05-12T06:08:47.248+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'crawl_dag', 'run_clean', 'scheduled__2024-05-11T00:00:00+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpo2egwikf']
+[2024-05-12T06:08:47.251+0000] {standard_task_runner.py:85} INFO - Job 300: Subtask run_clean
+[2024-05-12T06:08:47.296+0000] {task_command.py:416} INFO - Running <TaskInstance: crawl_dag.run_clean scheduled__2024-05-11T00:00:00+00:00 [running]> on host 18f281e83bd3
+[2024-05-12T06:08:47.369+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='thinhcute' AIRFLOW_CTX_DAG_ID='crawl_dag' AIRFLOW_CTX_TASK_ID='run_clean' AIRFLOW_CTX_EXECUTION_DATE='2024-05-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-11T00:00:00+00:00'
+[2024-05-12T06:08:47.375+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_clean.py", line 40, in clean_data
+    df = pd.read_json(input_path, lines=True, encoding="utf-8")
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/json/_json.py", line 760, in read_json
+    json_reader = JsonReader(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/json/_json.py", line 861, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/json/_json.py", line 917, in _get_data_from_filepath
+    raise FileNotFoundError(f"File {filepath_or_buffer} does not exist")
+FileNotFoundError: File /opt/***/data/crawl_data/hoayeuthuong.json does not exist
+[2024-05-12T06:08:47.384+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=crawl_dag, task_id=run_clean, execution_date=20240511T000000, start_date=20240512T060847, end_date=20240512T060847
+[2024-05-12T06:08:47.395+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 300 for task run_clean (File /opt/***/data/crawl_data/hoayeuthuong.json does not exist; 348)
+[2024-05-12T06:08:47.418+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-05-12T06:08:47.439+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
